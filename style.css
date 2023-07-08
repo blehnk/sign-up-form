@@ -51,8 +51,7 @@
 .form-area {
     background-color: #f4f4f4;
     width: 60%;
-    padding-left: 80px;
-    padding-top: 200px;
+    padding-top: 150px;
 
 
 }
@@ -63,12 +62,14 @@
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: x-large;
+    padding-left: 80px;
+
 }
 
 .form-row {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px 0;
     padding-left: 0px;
 }
 
@@ -83,17 +84,52 @@
     border-radius: 3px;
 }
 
+.form-row input[type="text"]:focus,
+.form-row input[type="email"]:focus,
+.form-row input[type="tel"]:focus,
+.form-row input[type="password"]:focus {
+    border: 1px solid rgb(4, 127, 158);
+    box-shadow: 2px 2px 5px grey;
+    outline: none;
+} 
+
 .form-row label {
     padding-bottom: 5px;
     font-family: Helvetica, Arial, sans-serif;
     letter-spacing: 0.2ch;
     word-spacing: 0.8ch;
     font-size: small;
+    font-weight: 550;
 }
 
 .login-details legend {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: x-large;
+    padding: 20px 0;
+
+}
+.login-details-container {
+    background-color: white;
 }
 
+.login-details {
+    padding-left: 80px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+}
+
+.form-row input[type="password"]:invalid {
+    border: 1px solid red;
+} 
+
+form {
+    padding-top: 50px;
+}
+
+.form-row input[type="password"]::placeholder {
+    font-size: xx-small;
+}

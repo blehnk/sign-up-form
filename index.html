@@ -25,39 +25,47 @@
             <p>You <em>know</em> you want to.</p>
 
             <form action="" method="get">
-                <fieldset class="login-details">
-                    <legend>Let's do this!</legend>
-
-                    <div class="form-row">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
-                    </div>
-
-                    <div class="form-row">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
-                    </div>
-
-                    <div class="form-row">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="user-email" id="email">
-                    </div>
-
-                    <div class="form-row">
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" name="phone-number" id="phone-number">
-                    </div>
-
-                    <div class="form-row">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="user-password" id="password">
-                    </div>
-
-                    <div class="form-row">
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
-                    </div>
-                </fieldset>
+                <div class="login-details-container">
+                    <fieldset class="login-details">
+                        <legend>Let's do this!</legend>
+                        <div class="form-row">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="form-row">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="user-email" id="email">
+                        </div>
+                        <div class="form-row">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" name="phone-number" id="phone-number">
+                        </div>
+                        <div class="form-row">
+                            <label for="password">PASSWORD</label>
+                            <input 
+                            type="password" 
+                            name="user-password" 
+                            id="password"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                            placeholder="UCase, LCase, Num/SpecialChar & min 8 Char"
+                            >
+                        </div>
+                        <div class="form-row">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input 
+                            type="password" 
+                            name="confirm-password" 
+                            id="confirm-password"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                            placeholder="UCase, LCase, Num/SpecialChar & min 8 Char"
+                            >
+                        </div>
+                    </fieldset>
+                </div>
 
                 <button type="submit">Create Account</button>
             </form>
