@@ -1,0 +1,46 @@
+@font-face {
+    font-family: captionFont;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.visuals {
+    position: relative;
+}
+
+.bg-img {
+    width: 40%;
+    height: 100vh;
+    color: red;
+
+}
+
+.caption {
+    background-color: rgb(0,0,0,0.5);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+
+}
+
+.odin-img {
+    width: 6rem;
+}
+
+.caption span {
+    color: white;
+    font-family: captionFont;
+    font-size: 5rem;
+}
+
+.container {
+    display: flex;
+}
