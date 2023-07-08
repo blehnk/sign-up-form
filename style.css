@@ -36,18 +36,18 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 300px;
+    top: 8em;
 
 }
 
 .odin-img {
-    width: 6rem;
+    width: 2.8em;
 }
 
 .caption span {
     color: white;
     font-family: captionFont, Helvetica, Arial, sans-serif;
-    font-size: 5rem;
+    font-size: 2.5em;
 }
 
 .form-area {
